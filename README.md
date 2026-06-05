@@ -47,7 +47,7 @@ Five mesh objects are arranged chronologically, each colored to match the hex co
 | 3D viewer | [model-viewer](https://modelviewer.dev/) v3.4.0 (Google) |
 | Hosting | GitHub Pages (HTTPS) |
 | Compression | Draco level 10, position quantize 10, normals 8 |
-| Web server | nginx (Docker, local dev) |
+| Web server | GitHub Pages |
 
 ## Controls
 
@@ -63,9 +63,7 @@ Five mesh objects are arranged chronologically, each colored to match the hex co
 /
 ├── index.html          # Narrative landing page
 ├── model.html          # Standalone viewer (iframe target)
-├── Line_up_Draco.glb   # Draco-compressed 3D model
-├── nginx.conf          # Local dev server config
-└── Dockerfile          # Local dev container
+└── Line_up_Draco.glb   # Draco-compressed 3D model
 ```
 
 ## Course Context
