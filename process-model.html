@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mt. St. Helens – Process Model | PCC GEO 267</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Georgia, serif;
+      background: #0d0d0d;
+      color: #e8e0d0;
+      line-height: 1.7;
+    }
+    header {
+      padding: 3rem 2rem 2rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header h1 {
+      font-family: 'Cinzel', 'Castellar', serif;
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+      color: #f5ede0;
+    }
+    header p.subtitle {
+      font-size: 1rem;
+      color: #998870;
+      font-style: italic;
+    }
+    .back-link {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 1.5rem;
+      font-size: 0.88rem;
+    }
+    .back-link a {
+      color: #cc9966;
+      text-decoration: none;
+    }
+    .back-link a:hover { text-decoration: underline; }
+    .model-section {
+      width: 100%;
+      height: 70vh;
+      background: #111;
+      border-top: 1px solid #2a2a2a;
+      border-bottom: 1px solid #2a2a2a;
+      overflow: hidden;
+    }
+    .model-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .caption {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1rem 2rem 0.5rem;
+      font-size: 0.82rem;
+      color: #666;
+      font-style: italic;
+    }
+    .narrative {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .narrative h2 {
+      font-size: 1.3rem;
+      font-weight: normal;
+      color: #cc9966;
+      margin-bottom: 1rem;
+    }
+    .narrative p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      color: #ccc0b0;
+    }
+    .narrative a {
+      color: #cc9966;
+    }
+    footer {
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      border-top: 1px solid #222;
+      font-size: 0.78rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mt. St. Helens</h1>
+    <p class="subtitle">3D Print Progression of USGS Survey Epochs, 1980s | PCC GEO 267</p>
+  </header>
+
+  <div class="back-link">
+    <a href="index.html">&larr; Back to interactive epoch viewer</a>
+  </div>
+
+  <div class="model-section">
+    <iframe src="model.html" allowfullscreen></iframe>
+  </div>
+  <p class="caption">Six terrain models arranged chronologically. Left-click and drag to orbit &mdash; right-click and drag to pan &mdash; scroll to zoom.</p>
+
+  <div class="narrative">
+    <h2>About this model</h2>
+    <p>
+      Five separate mesh objects representing the progression of 3D printed models of Mt. St. Helens at distinct USGS survey epochs
+      from the 1952, 1980, 1981 are arranged in a line. Each object is colored to the hex code matching the filament used for the 3D print or the color used to distinguish the mesh in Blender. The models are
+      allowing direct visual comparison of how the summit and crater changed following the
+      May 18, 1980 eruption and the effect of the processes deployed to downscale, smooth and stitch the terrain. To learn more about the process, view the <a href="https://storymaps.arcgis.com/stories/a00808bd778f4a819f555418bfd5d687" target="_blank" rel="noopener">StoryMap</a>.
+    </p>
+    <p>
+      Source data: USGS <a href="https://www.usgs.gov/tools/sciencebase" target="_blank" rel="noopener">ScienceBase</a>. Processed in QGIS and modeled in Blender 5.1.2,
+      exported as Draco-compressed glTF 2.0 binary. Prints were sliced using PrusaSlicer.
+    </p>
+  </div>
+
+  <footer>GEO 267 | Portland Community College | 2026</footer>
+</body>
+</html>
